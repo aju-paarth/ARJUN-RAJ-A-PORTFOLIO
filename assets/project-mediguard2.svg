@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="m2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" fill="url(#m2Bg)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#334155" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="90" x2="600" y2="90" />
+    <line x1="0" y1="180" x2="600" y2="180" />
+    <line x1="0" y1="270" x2="600" y2="270" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+  </g>
+
+  <!-- Left: 6-Compartment Rotating Tray Hardware -->
+  <g transform="translate(140, 180)">
+    <!-- Outer base circle -->
+    <circle cx="0" cy="0" r="110" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
+    <!-- Rotating 6 slots -->
+    <circle cx="0" cy="0" r="95" fill="#0f172a" stroke="#475569" stroke-width="1.5" />
+    
+    <!-- 6 Radial dividers -->
+    <line x1="0" y1="-95" x2="0" y2="95" stroke="#38bdf8" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-82.2" y1="-47.5" x2="82.2" y2="47.5" stroke="#38bdf8" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-82.2" y1="47.5" x2="82.2" y2="-47.5" stroke="#38bdf8" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Stepper Motor Hub in center -->
+    <circle cx="0" cy="0" r="32" fill="#1e293b" stroke="#818cf8" stroke-width="2" />
+    <circle cx="0" cy="0" r="12" fill="#38bdf8" />
+    <text x="0" y="4" fill="#ffffff" font-family="monospace" font-size="7" font-weight="bold" text-anchor="middle">STEPPER</text>
+
+    <!-- Active compartment indicator -->
+    <circle cx="0" cy="-60" r="14" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="0" cy="-60" r="4" fill="#10b981" />
+
+    <text x="0" y="140" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">6-Slot Rotating Dispenser</text>
+  </g>
+
+  <!-- Right: Connected IoT & Audio System -->
+  <g transform="translate(320, 60)">
+    <!-- Phone / Mobile App Card -->
+    <rect x="0" y="0" width="220" height="240" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Phone Header -->
+    <rect x="0" y="0" width="220" height="38" rx="14" fill="#1e293b" />
+    <circle cx="20" cy="19" r="4" fill="#10b981" />
+    <text x="32" y="23" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">MediGuard App</text>
+    <text x="180" y="23" fill="#94a3b8" font-family="monospace" font-size="9">WiFi ON</text>
+
+    <!-- Status Card -->
+    <rect x="15" y="52" width="190" height="50" rx="8" fill="#1e293b" stroke="#0ea5e9" stroke-width="1" />
+    <text x="25" y="70" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9">NEXT SCHEDULED DOSE</text>
+    <text x="25" y="90" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13" font-weight="bold">Slot #3 &bull; 12:30 PM</text>
+    <circle cx="185" cy="77" r="6" fill="#10b981" />
+
+    <!-- Modules List -->
+    <g transform="translate(15, 115)">
+      <!-- Audio module -->
+      <rect x="0" y="0" width="90" height="42" rx="6" fill="#1e293b" />
+      <text x="8" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="8.5" font-weight="bold">DFPlayer Voice</text>
+      <text x="8" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8">PAM8403 Amp</text>
+
+      <!-- RFID / Fingerprint -->
+      <rect x="100" y="0" width="90" height="42" rx="6" fill="#1e293b" />
+      <text x="108" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="8.5" font-weight="bold">Dual Auth</text>
+      <text x="108" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8">RFID + Biometric</text>
+    </g>
+
+    <g transform="translate(15, 168)">
+      <!-- IR Sensor -->
+      <rect x="0" y="0" width="90" height="42" rx="6" fill="#1e293b" />
+      <text x="8" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="8.5" font-weight="bold">IR Pickup Sense</text>
+      <text x="8" y="32" fill="#10b981" font-family="system-ui, sans-serif" font-size="8">Hand Detect</text>
+
+      <!-- Battery Backup -->
+      <rect x="100" y="0" width="90" height="42" rx="6" fill="#1e293b" />
+      <text x="108" y="16" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="8.5" font-weight="bold">Power Mgmt</text>
+      <text x="108" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="8">USB-C + Li-ion</text>
+    </g>
+  </g>
+
+  <!-- Controller Badge -->
+  <rect x="30" y="30" width="160" height="26" rx="13" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1"/>
+  <text x="110" y="47" fill="#38bdf8" font-family="monospace" font-size="10.5" font-weight="bold" text-anchor="middle">ESP32 DevKitC-32UE</text>
+</svg>

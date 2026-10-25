@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="siliconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0b5"/>
+      <stop offset="100%" stop-color="#e0ac87"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle with semiconductor trace lines -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" stroke="#38bdf8" stroke-width="3" stroke-opacity="0.4" />
+  
+  <!-- Silicon / IC Microchip Traces -->
+  <g stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.3" fill="none">
+    <path d="M 40 160 H 110 L 140 190 V 270" stroke-dasharray="3,3"/>
+    <circle cx="40" cy="160" r="3.5" fill="#38bdf8"/>
+    <circle cx="140" cy="270" r="3.5" fill="#818cf8"/>
+    
+    <path d="M 360 160 H 290 L 260 190 V 270" stroke-dasharray="3,3"/>
+    <circle cx="360" cy="160" r="3.5" fill="#38bdf8"/>
+    <circle cx="260" cy="270" r="3.5" fill="#818cf8"/>
+    
+    <path d="M 200 30 V 80" />
+    <circle cx="200" cy="30" r="3.5" fill="#38bdf8"/>
+  </g>
+
+  <!-- Torso & Blazer -->
+  <path d="M 90 380 C 100 295, 150 275, 200 275 C 250 275, 300 295, 310 380 Z" fill="#1e293b" />
+  <!-- Lapel / Shirt -->
+  <path d="M 158 280 L 200 340 L 242 280 L 216 280 L 200 310 L 184 280 Z" fill="#0284c7" />
+  <path d="M 174 280 L 200 324 L 226 280 Z" fill="#f8fafc" />
+
+  <!-- Neck -->
+  <rect x="180" y="235" width="40" height="52" rx="6" fill="#e0ac87" />
+  <path d="M 180 262 Q 200 272 220 262 V 272 Q 200 282 180 272 Z" fill="#c7926b" opacity="0.4" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="190" rx="56" ry="66" fill="url(#skinGrad)" />
+
+  <!-- Ears -->
+  <ellipse cx="144" cy="190" rx="10" ry="16" fill="#e0ac87" />
+  <ellipse cx="256" cy="190" rx="10" ry="16" fill="#e0ac87" />
+
+  <!-- Hair & Styling -->
+  <path d="M 142 175 C 140 128, 170 115, 200 115 C 235 115, 260 128, 258 175 C 245 150, 220 145, 200 145 C 175 145, 155 155, 142 175 Z" fill="#18181b" />
+  <path d="M 148 140 C 160 110, 230 105, 255 130 C 240 120, 220 115, 195 120 C 175 124, 160 130, 148 140 Z" fill="#27272a" />
+
+  <!-- Eyes -->
+  <ellipse cx="180" cy="186" rx="5" ry="4" fill="#18181b" />
+  <ellipse cx="220" cy="186" rx="5" ry="4" fill="#18181b" />
+  <circle cx="182" cy="185" r="1.5" fill="#ffffff" />
+  <circle cx="222" cy="185" r="1.5" fill="#ffffff" />
+
+  <!-- Eyebrows -->
+  <path d="M 170 176 Q 182 172 192 176" stroke="#18181b" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M 208 176 Q 218 172 230 176" stroke="#18181b" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Nose -->
+  <path d="M 200 184 V 202 H 205" stroke="#c7926b" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Smile & Groomed Facial Hair -->
+  <path d="M 190 216 Q 200 224 210 216" stroke="#a36544" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M 152 200 C 158 240, 175 255, 200 255 C 225 255, 242 240, 248 200 C 242 220, 230 247, 200 247 C 170 247, 158 220, 152 200 Z" fill="#18181b" opacity="0.85" />
+  <path d="M 186 211 Q 200 214 214 211 C 208 215, 192 215, 186 211 Z" fill="#18181b" />
+
+  <!-- Modern Tech Eyewear -->
+  <rect x="165" y="175" width="30" height="22" rx="6" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+  <rect x="205" y="175" width="30" height="22" rx="6" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+  <line x1="195" y1="184" x2="205" y2="184" stroke="#38bdf8" stroke-width="2.5" />
+  <line x1="165" y1="184" x2="148" y2="181" stroke="#38bdf8" stroke-width="2" />
+  <line x1="235" y1="184" x2="252" y2="181" stroke="#38bdf8" stroke-width="2" />
+
+  <!-- Badge Pill Below -->
+  <rect x="105" y="340" width="190" height="34" rx="17" fill="#0f172a" stroke="url(#accentGrad)" stroke-width="1.5" />
+  <text x="200" y="362" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="1">VLSI DESIGN &bull; ECE &bull; IoT</text>
+</svg>
