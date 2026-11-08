@@ -636,10 +636,21 @@
         <div class="project-card">
           <div class="project-img-wrapper">
             <span class="project-badge-pill">Published &bull; IEEE Xplore</span>
-            <img src="assets/project-mediguard.svg" alt="MediGuard 7X Smart Medicine Box" class="project-img">
+            <img id="mediguard-preview-img" src="assets/mediguard7x-open.jpg" alt="MediGuard 7X Working Hardware Prototype" class="project-img prototype-photo">
           </div>
           <div class="project-body">
-            <h3 class="project-title">MediGuard 7X — Smart, Secure Medicine Box</h3>
+            <div class="project-thumbs">
+              <button type="button" class="project-thumb-btn active" onclick="document.getElementById('mediguard-preview-img').src='assets/mediguard7x-open.jpg'; this.parentElement.querySelectorAll('.project-thumb-btn').forEach(b => b.classList.remove('active')); this.classList.add('active');">
+                Internal Mechanism
+              </button>
+              <button type="button" class="project-thumb-btn" onclick="document.getElementById('mediguard-preview-img').src='assets/mediguard7x-dispense.jpg'; this.parentElement.querySelectorAll('.project-thumb-btn').forEach(b => b.classList.remove('active')); this.classList.add('active');">
+                Dispense Screen
+              </button>
+              <button type="button" class="project-thumb-btn" onclick="document.getElementById('mediguard-preview-img').src='assets/mediguard7x-standby.jpg'; this.parentElement.querySelectorAll('.project-thumb-btn').forEach(b => b.classList.remove('active')); this.classList.add('active');">
+                Standby View
+              </button>
+            </div>
+            <h3 class="project-title">MediGuard 7X &mdash; Smart, Secure Medicine Box</h3>
             <p class="project-desc">
               A smart, cost-conscious embedded medicine box designed to assist patients in following daily medication routines through scheduled reminders, biometric authentication, and automated compartment access control.
             </p>
