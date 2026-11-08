@@ -248,4 +248,41 @@ document.addEventListener('DOMContentLoaded', () => {
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
+
+  // --- 9. Lightbox Modal for Images & Circuit Diagrams ---
+  const lightboxModal = document.getElementById('lightbox-modal');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  document.querySelectorAll('[data-lightbox-src]').forEach(el => {
+    el.addEventListener('click', () => {
+      const src = el.getAttribute('data-lightbox-src');
+      const caption = el.getAttribute('data-lightbox-caption') || '';
+      if (lightboxModal && lightboxImg) {
+        lightboxImg.src = src;
+        if (lightboxCaption) lightboxCaption.textContent = caption;
+        lightboxModal.classList.add('open');
+      }
+    });
+  });
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', () => {
+      lightboxModal.classList.remove('open');
+    });
+  }
+
+  if (lightboxModal) {
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) {
+        lightboxModal.classList.remove('open');
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal.classList.contains('open')) {
+        lightboxModal.classList.remove('open');
+      }
+    });
+  }
 });
